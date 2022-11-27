@@ -13,23 +13,6 @@ class App extends Component {
     ]
   };
 
-  // Lifecycle Hooks
-
-  // Constructor called only once at he beginning of the class creation
-  // To initialize state based on props from outside
-  constructor(props) {
-    super(props);
-    console.log('App - Constructor');
-    // this.state = this.props.something;
-  }
-
-  // componentDidMount() is called ofter the render() method
-  componentDidMount() {
-    // Ajax call to get data from server
-    console.log('App - Mounted');
-    // this.setState({ movies })
-  }
-
   handleIncrement = counter => {
     const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
@@ -52,7 +35,6 @@ class App extends Component {
   };
 
   render() {
-    console.log('App - Rendered');
     return (
       <React.Fragment>
         <NavBar
